@@ -32,5 +32,4 @@ class Solution:
             node.left = TreeNode(v)
             node.right = TreeNode(v)
             node.left.left, node.right.right = left, right
-        
         return root
