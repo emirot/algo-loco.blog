@@ -34,4 +34,3 @@ class Solution:
             node.left.left, node.right.right = left, right
         
         return root
-        
