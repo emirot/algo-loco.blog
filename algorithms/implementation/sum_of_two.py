@@ -1,5 +1,3 @@
-
-
 def sum_of_two(arr, target):
     hash_set = set()
     res = []
@@ -8,8 +6,11 @@ def sum_of_two(arr, target):
             res.append([e, target - e])
         else:
             hash_set.add(e)
-    print(res)
+    return res
+
 
 if __name__ == "__main__":
-    sum_of_two([2, 1, 8, 4, 7, 3], 3)
-    sum_of_two([2, 1, 8, 4, 7, 3], 21)
+    assert sum_of_two([2, 1, 8, 4, 7, 3], 3) == [[1, 2]], sum_of_two(
+        [2, 1, 8, 4, 7, 3], 3
+    )
+    assert sum_of_two([2, 1, 8, 4, 7, 3], 21) == []
